@@ -4,6 +4,9 @@ package strings_and_dialogs;
  *    Level 0
  */
 
+import java.lang.annotation.Repeatable;
+import java.util.function.LongBinaryOperator;
+
 import org.jointheleague.graphical.robot.Robot;
 
 // This recipe draws a square using the Robot
@@ -12,17 +15,19 @@ public class RobotSquare {
     public static void main(String[] args) throws Exception {
  
     	// 1. Make a new Robot
-
+Robot walle = new Robot();
 
         // 3. Put the robot's pen down
 
-
+walle.penDown();
         // 6. Make the robot move as fast as possible
-
+walle.setSpeed(9000);
 
         // 5. Do everything below here 4 times
-
-
+for (int i = 0; i < 4.; i++) {
+	walle.move(200);
+	walle.turn(90);
+}
         //         2. Move your robot 200 pixels
 
 
